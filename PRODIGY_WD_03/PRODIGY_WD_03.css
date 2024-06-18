@@ -1,0 +1,121 @@
+*{
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+    -webkit-transition: 0.2s ease-in-out;
+    -moz-transition: 0.2s ease-in-out;
+    -ms-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+}
+
+.align{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    z-index: -3;
+    background-color: #b776a2;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.turn-container{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+}
+
+.turn-container h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.turn-container .turn-box{
+    border: 3px solid #000000;
+    font-size:2rem;
+    font-weight: 7000;
+    font-family: stencil;
+    color:#000;
+}
+
+.turn-container .turn-box:nth-child(even){
+    border-right: none;
+}
+
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background-color: #FF2E63;
+    z-index: -1;
+}
+
+.main-grid{
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 5px solid #000;
+}
+
+.box{
+    padding: 5px;
+    font-family: stencil;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    color:#000000;
+}
+
+.box:hover{
+    background-color: #e3ff2b;
+}
+
+#play-again{
+    background-color: #ff0000;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+    font-family: stencil;
+}
+
+#play-again:hover{
+    padding: 10px 60px;
+    background-color: #53f832;
+    color: #000;
+    font-family: stencil;
+}
+h1{
+    color:rgb(0, 2, 67);
+    font-family: stencil;
+    font-size: 40px;
+}
+h3{
+    color:#000000;
+    text-align: center;
+    font-family: lato;
+    font-size: 22px;
+}
+img src{
+    z-index: -2;
+}
